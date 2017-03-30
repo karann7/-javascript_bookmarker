@@ -42,7 +42,10 @@ function saveBookmark(e) {
 		}
 
 		//Re-fetch bookmarks
+		siteName.reset();
+		siteUrl.reset();
 	fetchBookmarks();
+	
 
 	//Prevent from submitting.
 	e.preventDefault();
